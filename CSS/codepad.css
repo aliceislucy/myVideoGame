@@ -1,0 +1,122 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    13deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(255, 255, 255, 1) 56%
+  );
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+#pad {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  gap: 10px;
+}
+
+#one {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#two {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#three {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#four {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#five {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#six {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#seven {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#eight {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#nine {
+  grid-area: 1;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./image/index/index-background.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background: linear-gradient(
+    75deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 68%
+  );
+  opacity: 0;
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 3.5fr 2fr;
+  grid-template-rows: 1fr 40fr 40fr 10fr;
+  grid-template-areas:
+    ". . . ."
+    ". play empty ."
+    ". sound niki ."
+    ". . . .";
+  gap: 10px;
+}
+
+.play {
+  grid-area: play;
+  justify-self: end;
+  align-self: end;
+  line-height: 400px;
+  text-align: center;
+  font-family: "Italiana", serif;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.empty {
+  grid-area: empty;
+  justify-self: start;
+  align-self: end;
+}
+
+.sound {
+  grid-area: sound;
+  justify-self: end;
+}
+
+.niki {
+  grid-area: niki;
+  justify-self: start;
+}
+
+.big-square {
+  background-color: white;
+  border: solid;
+  height: 400px;
+  width: 400px;
+}
+
+.small-square {
+  background-color: white;
+  border: solid;
+  height: 175px;
+  width: 175px;
+}
+
+.niki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.niki img {
+  height: 305px;
+  width: 250px;
+}
+
+iframe {
+  display: none;
+}
