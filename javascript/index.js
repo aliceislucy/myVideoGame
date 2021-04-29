@@ -1,10 +1,14 @@
-const play = document.querySelector(".play");
+const enterButton = document.querySelector(".enter");
 
 
-function startGame () {
-    document.location.href="/cinematic-awake.html";
+
+
+
+function enter(){
+    document.location.href="/home-page.html"
 }
 
 
 
-play.addEventListener("click", startGame)
+
+enterButton.addEventListener("click", enter)

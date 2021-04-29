@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/codepad.css" />
     <script type="module" src="javascript/codepad.js"></script>
     <title>Code pad</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="flex">
     <div id="pad">
+      <input id="input" type="text" data-role="keypad" placeholder="Enter pin" value="" />
 
-        <input type="text" data-role="keypad" placeholder="Enter pin">
+      <div id="keyPad">
 
-        <div class="grid">
-            <div id="one" class="key">1</div>
-            <div id="two" class="key">2</div>
-            <div id="three" class="key">3</div>
-            <div id="four" class="key">4</div>
-            <div id="five" class="key">5</div>
-            <div id="six" class="key">6</div>
-            <div id="seven" class="key">7</div>
-            <div id="eight" class="key">8</div>
-            <div id="nine" class="key">9</div>
+        <div class="row">
+          <button id="one" class="key">1</button>
+          <button id="two" class="key">2</button>
+          <button id="three" class="key">3</button>
         </div>
 
+        <div class="row">
+          <button id="four" class="key">4</button>
+          <button id="five" class="key">5</button>
+          <button id="six" class="key">6</button>
+        </div>
+
+        <div class="row">
+          <button id="seven" class="key">7</button>
+          <button id="eight" class="key">8</button>
+          <button id="nine" class="key">9</button>
+        </div>
+
+        <div class="row">
+          <button id="erase" class="key">BACK</button>
+          <button id="zero" class="key">0</button>
+          <button id="enter" class="key">ENTER</button>
+        </div>
+
+      </div>
     </div>
-</body>
+  </div>
+  <button id="backButton">back</button>
+ 
+  </body>
 </html>
