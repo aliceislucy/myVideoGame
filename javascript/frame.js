@@ -8,7 +8,7 @@ setTimeout(function () {
     text.className = "text";
     text.textContent = "Looks like a couple celebrating something... I wonder if I could find a clue that could help me get out of here ! Who are these people anyway ?!";
     body.appendChild(text);
-}, 5000);
+}, 4000);
 
 
 // BACK BUTTON REDIRECTS TO BEDROOM

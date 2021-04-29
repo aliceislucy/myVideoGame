@@ -1,4 +1,7 @@
-// BACK BUTTON REDIRECTS TO BEDROOM
+const vid = document.getElementsByTagName("static");
+
+vid.volume = 0.5;
+
 
 const backButton = document.getElementById("backButton");
 
