@@ -16,16 +16,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 500px;
-  height: 565px;
+  width: 450px;
+  height: 700px;
   font-size: 50px;
   background-color: white;
   padding: 30px;
   margin: 50px;
-  border-radius: 20px;
   letter-spacing: 0.05em;
+  border-width: 3px 4px 3px 5px;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(1deg);
+  border: solid black;
   opacity: 0;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 15s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

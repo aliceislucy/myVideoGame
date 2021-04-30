@@ -73,7 +73,7 @@ function typeErase () {
 }
 
 function typeEnter () {
-    if (input.value === "267945"){
+    if (input.value === "165713"){
         location.href = "/cinematic-last.html";
     } else {
         input.value = "";

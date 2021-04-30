@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cinematic {
+    width: 100%;
+    position: relative;
+    top: -80px;
+  }
+
+#backButton {
+    padding: 15px 25px;
+    background-color: gray;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Krona One", sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 10px 5px black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }

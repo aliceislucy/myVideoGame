@@ -1,6 +1,6 @@
-const vid = document.getElementsByTagName("static");
+const video = document.getElementById("static");
 
-vid.volume = 0.5;
+video.volume = 0.02;
 
 
 const backButton = document.getElementById("backButton");

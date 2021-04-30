@@ -1,32 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
 * {
-    border: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
-  #backButton {
-    padding: 15px 25px;
-    background-color: gray;
-    text-transform: uppercase;
-    color: black;
-    font-family: "Krona One", sans-serif;
-    letter-spacing: 1px;
-    box-shadow: 10px 5px black;
-    text-decoration: none;
-    font-size: 20px;
-    margin-left: 30px;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
+.image {
+  height:100vh;
+}
+
+#chip {
+  width: 10px;
+  animation-duration: 4s;
+  animation-name: flicker;
+  animation-iteration-count: infinite;
+  transition: none;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.chip-container {
+  position: absolute;
+  left: 798px;
+  top: 400px;
+}
+
+.text {
+  position: absolute;
+  left: 80px;
+  top: 300px;
+  width: max-content;
+  height: max-content;
+  font-size: 50px;
+  background-color: white;
+  padding: 30px;
+  margin: 50px;
+  letter-spacing: 0.05em;
+  border-width: 3px 4px 3px 5px;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(1deg);
+  border: solid black;
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#backButton {
+  padding: 15px 25px;
+  background-color: gray;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 10px 5px black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
